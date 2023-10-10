@@ -1,0 +1,60 @@
+/*
+默认内间距、外间距*/
+*{
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  font-family: '微软雅黑';
+}
+html {
+  background-color: #F2F2F2;
+}
+/*清除a标签下划线*/
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2fa7b9;
+}
+#nprogress .bar {
+  background: #083a6d !important;
+}
+
+.card-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header h3{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+:deep(.el-card__header){
+  border-bottom: 1px solid rgb(238,238,238);
+  color: #083a6d;
+}
+.my-button{
+  display: flex;
+  justify-content: space-between;
+}
+
+.el-pagination{
+  margin-top: 20px;
+  justify-content: center;
+}
+
+:deep(.el-pagination.is-background .el-pager li:not(.is-disabled).is-active){
+  background-color: skyblue;
+}
+
+/*自定义弹出框样式*/
+.my-header{
+  display: flex;
+  justify-content: flex-start;
+  color: skyblue
+}
