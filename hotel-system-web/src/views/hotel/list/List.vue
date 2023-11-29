@@ -68,13 +68,13 @@
         <el-row :gutter="20">
           <template v-for="item in roomList">
             <el-col :span="8" style="padding: 10px;">
-              <router-link target="_blank" class="room-list-box" :to="'/hotel/details'+item.id">
+              <router-link target="_blank" class="room-list-box" :to="'/hotel/details/'+item.id">
                 <img :src="url+'uploadFile/'+item.coverImg" class="room-list-cover">
                 <h2>{{item.roomName}}</h2>
                 <div><label class="room-list-pay">${{item.memberPrice}}</label>
                 <div class="room-list-colorbar">
                   <span class="room-color-bar"
-                        style="border-color: #009688;border-width: 1px;border-style: solid;background-color:white;text-align: center">
+                        style="border-color: #009688;border-width: 1px;border-style: solid;background-color:white;text-align: center;">
                     NO.{{item.roomNumber}}</span>
                   <span class="room-color-bar"
                         style="border-color: skyblue;border-width: 1px;border-style: solid;background-color:white;text-align: center">
@@ -295,5 +295,13 @@ onMounted(()=>{
   display: inline-block;
   width: 65px;
   height: 20px;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2fa7b9;
 }
 </style>

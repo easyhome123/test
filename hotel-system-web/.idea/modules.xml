@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/vue3.x-system-web.iml" filepath="$PROJECT_DIR$/.idea/vue3.x-system-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hotel-system-web.iml" filepath="$PROJECT_DIR$/.idea/hotel-system-web.iml" />
     </modules>
   </component>
 </project>

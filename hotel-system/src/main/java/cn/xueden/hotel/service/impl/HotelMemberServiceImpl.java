@@ -123,4 +123,7 @@ public class HotelMemberServiceImpl implements IHotelMemberService {
             hotelMemberRepository.save(hotelMember);
         }
     }
+
+
+
 }

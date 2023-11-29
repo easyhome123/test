@@ -1,5 +1,5 @@
 <template>
-  <el-card>
+  <el-card >
     <template #header>
       <div class="card-header">
         <h3>
@@ -83,9 +83,9 @@
           <template #default="scope">
             <el-tag v-if="scope.row.status ===0" type="warning">已预定，待付款</el-tag>
             <el-tag v-else-if="scope.row.status ===1" type="success">已付款，待入住</el-tag>
-            <el-tag v-else-if="scope.row.status ===2 " type="info">已入住，未退房</el-tag>
-            <el-tag v-else-if="scope.row.status ===3 " type="info">已退订</el-tag>
-            <el-tag v-else-if="scope.row.status ===4 ">已完成</el-tag>
+            <el-tag v-else-if="scope.row.status ===2" type="info">已入住，未退房</el-tag>
+            <el-tag v-else-if="scope.row.status ===3" type="info">已退订</el-tag>
+            <el-tag v-else-if="scope.row.status ===4" type="info">已完成</el-tag>
             <el-tag v-else>未知</el-tag>
           </template>
         </el-table-column>

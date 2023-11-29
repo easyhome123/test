@@ -4,9 +4,8 @@
   <Search/>
 
   <div class="hotel-banner" style="background:#f2f2f2;">
-
     <div class="hotel-container">
-      <el-space alignment="flex-start">
+      <el-space alignment="nomal">
         <el-card>
           <Member/>
         </el-card>
@@ -105,8 +104,12 @@ import Footer from "@/views/hotel/comm/footer/Footer.vue";
 import Member from "@/views/hotel/comm/member/Member.vue";
 import {formatTime} from "@/utils/date";
 import {onMounted, ref} from "vue";
+import { markRaw } from 'vue'
 import {getMyReserveListApi, paymentApi} from "@/api/hotel/member/member";
 import {ElMessage, ElMessageBox} from "element-plus";
+import {Iphone} from "@element-plus/icons-vue";
+
+
 
 
 const tableData = ref([])
@@ -120,7 +123,7 @@ const getMyReserveList = async  ()=>{
   tableData.value = data.result.content
   total.value = data.result.totalElements
 }
-const pageSize = ref(5)
+const pageSize = ref(4)
 const pageIndex = ref(1)
 const Nindex = (index:number)=>{
   const page  = pageIndex.value
@@ -130,12 +133,15 @@ const Nindex = (index:number)=>{
 
 const payment = async (id:number,roomNumber:string) => {
   ElMessageBox.confirm(
-      `你已预定房间号为${roomNumber}的房间，确定要付款吗？`,
-      '温馨提示',
+      `你已预定房间号为${roomNumber}的房间，确定要付款吗？<br> <div><img src="src/assets/1.jpg" width="100px" height="100px" style="margin-left:100px;"></div>`,
+      "温馨提示",
       {
         confirmButtonText:'确定',
         cancelButtonText:'我想想',
-        type:'warning'
+        // type:'warning',
+        icon:markRaw(Iphone),
+        draggable: true,
+        dangerouslyUseHTMLString: true,
       }
   ).then( async  ()=>{
     const { data } = await paymentApi(id)

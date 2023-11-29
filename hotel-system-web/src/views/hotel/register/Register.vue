@@ -2,7 +2,7 @@
   <TopHeader/>
 
 
-  <Search/>
+  <!-- <Search/> -->
 
   <div class="hotel-container hotel-data">
     <el-card class="hotel-data-intro">
@@ -115,7 +115,7 @@ const register = async (formEl:FormInstance | undefined)=>{
 
 .register-content .register-bg{
   width: 100%;
-  background: url(@/assets/hotel/images/load_bg.jpg) no-repeat;
+  background-image: url("@/assets/login/login_bg.svg");
   background-size: cover;
 }
 
@@ -132,6 +132,7 @@ const register = async (formEl:FormInstance | undefined)=>{
   top:200px;
   right: 100px;
   padding: 0 30px;
+  border-radius: 10px;
 }
 .register-content .register-bg .register-cont .form-box legend{
   font-size: 20px;

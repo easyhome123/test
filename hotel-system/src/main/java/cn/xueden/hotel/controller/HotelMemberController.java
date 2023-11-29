@@ -59,4 +59,6 @@ public class HotelMemberController {
         hotelMemberService.deleteById(id);
         return  BaseResult.success("删除成功");
     }
+
+
 }

@@ -51,7 +51,7 @@
 
       <el-table-column label="入住状态">
         <template #default="scope">
-         <el-tag v-if="scope.row.status===0">未退房</el-tag>
+          <el-tag v-if="scope.row.status===0">未退房</el-tag>
           <el-tag v-else>已退房</el-tag>
         </template>
       </el-table-column>
@@ -104,7 +104,7 @@
 
       <el-table-column label="操作">
         <template #default="scope">
-          <el-button size="small" @click="checkout(scope.row.id)">退房</el-button>
+          <el-button v-if="scope.row.status===0" size="small" @click="checkout(scope.row.id)">退房</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -122,6 +122,9 @@ import {onMounted, reactive, toRefs} from "vue";
 import {getFloorListApi} from "@/api/hotel/floor/floor";
 import {checkoutApi, getCheckinListApi} from "@/api/hotel/checkin/checkin";
 import {ElMessage, ElMessageBox} from "element-plus";
+import { provide } from 'vue'
+
+
 
 
 const  state = reactive({
@@ -147,7 +150,6 @@ const loadData = async (state:any)=>{
   state.tableData = data.content
   state.total = data.totalElements
   state.loading = false
-
 }
 onMounted(()=>{
   loadData(state)

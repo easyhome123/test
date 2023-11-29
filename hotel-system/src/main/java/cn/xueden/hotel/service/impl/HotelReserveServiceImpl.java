@@ -72,17 +72,20 @@ public class HotelReserveServiceImpl implements IHotelReserveService {
         return hotelReserveRepository.findById(id).orElseGet(HotelReserve::new);
     }
 
-    //退订房间
 
+    //退订房间
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void unsubscribe(Long id) {
         HotelReserve hotelReserve = hotelReserveRepository.findById(id).orElseGet(HotelReserve::new);
+        HotelRoom hotelRoom = hotelRoomRepository.findById(hotelReserve.getRoomId()).orElseGet(HotelRoom::new);
         if(hotelReserve.getStatus()!=0&&hotelReserve.getStatus()!=1){
             throw new BadRequestException("该订单已完成，请勿重复操作");
         }else {
             hotelReserve.setStatus(3);
+            hotelRoom.setRoomStatus(0);//退订房间状态为 0
             hotelReserveRepository.save(hotelReserve);
+            hotelRoomRepository.save(hotelRoom);
         }
     }
 
@@ -113,6 +116,7 @@ public class HotelReserveServiceImpl implements IHotelReserveService {
     public void checkin(HotelCheckin hotelCheckin) {
         //根据订单号查找订单信息
         HotelReserve hotelReserve = hotelReserveRepository.findByOrderNumber(hotelCheckin.getOrderNumber());
+        HotelRoom hotelRoom = hotelRoomRepository.findById(hotelReserve.getRoomId()).orElseGet(HotelRoom::new);
         if(null == hotelReserve){
             throw new BadRequestException("订单为空或不存在");
         }else {
@@ -122,7 +126,9 @@ public class HotelReserveServiceImpl implements IHotelReserveService {
             hotelCheckin.setRoomId(hotelReserve.getRoomId());
             hotelCheckin.setStatus(0);
             hotelCheckin.setAmountMoney(hotelReserve.getAmountMoney());
-            hotelCheckin.setCheckinDate(LocalDate.now());
+            hotelCheckin.setCheckinDate(hotelReserve.getCheckinDate());
+            hotelRoom.setRoomStatus(2);//表示已入住 2
+            hotelRoomRepository.save(hotelRoom);
             hotelCheckinRepository.save(hotelCheckin);
         }
 
@@ -152,6 +158,8 @@ public class HotelReserveServiceImpl implements IHotelReserveService {
             //预定天数
             hotelReserve.setReserveDays(reserveDays);
             HotelRoom hotelRoom = hotelRoomRepository.getReferenceById(hotelReserve.getRoomId());
+            hotelRoom.setRoomStatus(1);//房间状态变为1，为已预定。
+            hotelRoomRepository.save(hotelRoom);
             int money = 0;
             money = reserveDays.intValue()*hotelRoom.getMemberPrice();
             hotelReserve.setAmountMoney(money);

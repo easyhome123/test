@@ -10,7 +10,6 @@
         <el-card>
           <Member/>
         </el-card>
-
         <el-card style="height: 350px">
           <template #header>
             <div content="card-header">
@@ -107,4 +106,5 @@ onMounted(()=>{
   padding: 0 15px;
   box-sizing: border-box;
 }
+
 </style>

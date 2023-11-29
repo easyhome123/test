@@ -11,10 +11,10 @@
     <groupId>cn.xueden</groupId>
     <artifactId>springboot3.x-system</artifactId>
     <version>1.0.0</version>
-    <name>springboot3.x-system</name>
+    <name>springboot3</name>
     <!--指定打包方式-->
     <packaging>jar</packaging>
-    <description>springboot3.x-system</description>
+    <description>springboot3</description>
     <properties>
         <java.version>17</java.version>
     </properties>

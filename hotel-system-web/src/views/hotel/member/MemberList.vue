@@ -135,7 +135,7 @@
 </template>
 <script setup lang="ts">
 
-import {Avatar, Delete, EditPen, Search} from "@element-plus/icons-vue";
+import {Avatar, Delete, EditPen, Search, SetUp} from "@element-plus/icons-vue";
 import {formatTime} from "@/utils/date";
 import {onMounted, reactive, ref, toRefs} from "vue";
 import {getFloorListApi} from "@/api/hotel/floor/floor";
@@ -191,9 +191,11 @@ const loadData = async (state:any)=>{
   state.total = data.totalElements
   state.loading = false
 }
+
 onMounted(()=>{
   loadData(state)
 })
+
 
 const memberInfo = ref()
 const rechargeDialogFormVisible = ref(false)

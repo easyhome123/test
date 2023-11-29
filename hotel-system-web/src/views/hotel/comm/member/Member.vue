@@ -56,4 +56,11 @@ activate.value =route.path
   background-color: #b3bde8;
 
 }
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #2fa7b9;
+}
 </style>

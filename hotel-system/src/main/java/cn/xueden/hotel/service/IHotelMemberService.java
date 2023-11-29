@@ -26,4 +26,5 @@ public interface IHotelMemberService {
     void updateMember(HotelMember hotelMember);
 
     void updateMemberPwd(MemberPwdModel memberPwdModel);
+
 }

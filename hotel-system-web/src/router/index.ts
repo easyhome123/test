@@ -114,7 +114,7 @@ export const staticRouter = [
                 path: '/home',
                 name: 'home',
                 meta: { title: '首页',icon: 'House',affix: true},
-                component: ()=> import('@/views/system/home/Index.vue')
+                component: ()=> import('@/views/system/home/Index.vue'),
             }
         ]
 
@@ -192,7 +192,17 @@ export const asyncRoutes = [
                     icon: 'Avatar',
                     role: ['ROLE_ADMIN','ROLE_USER']
                 },
-                component:()=>import('@/views/hotel/member/MemberList.vue')
+                component: ()=> import('@/views/hotel/member/MemberList.vue')
+            },
+            {
+                path: 'roomstate',
+                name: 'RoomState',
+                meta:{
+                    title:'房态管理',
+                    icon: 'House' ,
+                    role: ['ROLE_ADMIN']
+                },
+                component: ()=>import("@/views/hotel/roomstate/RoomState.vue")   
             },
         ]
     },
@@ -228,7 +238,7 @@ export const asyncRoutes = [
                     role: ['ROLE_USER','ROLE_ADMIN']
                 },
                 component: ()=>import('@/views/hotel/checkin/CheckinList.vue')
-            }
+            },
         ]
     },
     {
@@ -314,7 +324,7 @@ router.beforeEach(async (to,from,next)=> {
                 next()
             // 未登录，跳转到前台登录页
             }else{
-                return next({path: `/hotel/login?redirect=${to.path}`,replace:true})
+                return next({path:`/hotel/login?redirect=${to.path}`,replace:true})
             }
         }else {
             // 7.判断是否有token，没有重定向login

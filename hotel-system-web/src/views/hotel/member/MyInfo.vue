@@ -11,7 +11,6 @@
         <el-card>
           <Member/>
         </el-card>
-
         <el-card style="height: 350px;">
           <template #header>
             <div class="card-header">
@@ -175,7 +174,7 @@ onMounted(()=>{
 }
 .hotel-container{
   display: flex;
-  width: 1300px;
+  width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
@@ -185,4 +184,5 @@ onMounted(()=>{
   justify-content: center;
   align-items: center;
 }
+
 </style>

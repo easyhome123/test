@@ -40,7 +40,7 @@ public class HotelRoom extends BaseEntity {
     @Column(name = "member_price",nullable = false)
     private  Integer memberPrice;
 
-    //房间状态
+    //房间状态 0代表没人入住，1代表已经预订，2代表已入住
     @Column(name = "room_status",nullable = false)
     private Integer roomStatus;
 

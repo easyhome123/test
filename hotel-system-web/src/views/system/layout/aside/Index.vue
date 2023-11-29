@@ -53,7 +53,7 @@
 import { useRoute } from 'vue-router'
 import { computed ,ref} from 'vue'
 import { useSettingStore } from "../../../../store/modules/setting"
-import {useMenuStore} from "../../../../store/modules/menu";
+import { useMenuStore} from "../../../../store/modules/menu";
 
 const route = useRoute()
 const settingStore = useSettingStore()

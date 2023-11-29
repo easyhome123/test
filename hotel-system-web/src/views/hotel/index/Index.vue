@@ -1,11 +1,9 @@
 <template>
 <!--  顶部-->
   <TopHeader/>
-
 <!--  主体-->
 <div class="hotel-room-nav hotel-index">
   <Search/>
-
 <!--  幻灯片-->
   <div class="hotel-banner">
     <div class="hotel-container">
@@ -20,7 +18,7 @@
         </dl>
       </div>
     </div>
-      <el-carousel height="490px">
+      <el-carousel height="490px" autoplay type="card" loop >
         <el-carousel-item>
           <img src="@/assets/hotel/images/banner2.jpg" alt="酒店管理">
         </el-carousel-item>
@@ -87,7 +85,7 @@
                   <h2>{{room.roomName}}</h2>
                   <div>
                     <label class="store-list-pay">${{room.memberPrice}}</label>
-                    <div class="store-list-colorbar" title="">
+                      <div class="store-list-colorbar">
                       <span class="store-color-bar"
                             style="color: white;
                             background:#cc9812;
@@ -102,10 +100,14 @@
           </el-row>
         </div>
       </div>
-    </template>
+
+    
+    </template>  
+    <el-backtop :right="50" :bottom="400" />
   </div>
 <!--  底部-->
   <Footer/>
+
 </template>
 <script setup lang="ts">
 import TopHeader from "@/views/hotel/comm/header/TopHeader.vue";
@@ -113,6 +115,7 @@ import Footer from "@/views/hotel/comm/footer/Footer.vue";
 import Search from "@/views/hotel/comm/search/Search.vue";
 import {onMounted, ref} from "vue";
 import {getIndexApi} from "@/api/hotel/index";
+
 
 //服务器路径
 const url = import.meta.env.VITE_APP_BASE_API
@@ -129,10 +132,14 @@ onMounted(()=>{
 })
 
 
-
 </script>
 
 <style scoped>
+.my-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .hotel-container{
   width: 1300px;
   position: relative;
@@ -149,8 +156,12 @@ onMounted(()=>{
 
 .hotel-room-nav .hotel-banner{
   margin-top: 70px;
-  background:skyblue;
   text-align: center;
+}
+.hotel-room-nav .hotel-banner img{
+  width: 100%;
+  height: 100%;
+  border: 1px solid skyblue;
 }
 .hotel-room-nav .product-list{
   position: absolute;
@@ -265,5 +276,14 @@ onMounted(()=>{
   display: inline-block;
   width: 70px;
   height: 20px;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2fa7b9;
 }
 </style>

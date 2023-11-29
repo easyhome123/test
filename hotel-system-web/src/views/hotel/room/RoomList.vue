@@ -219,7 +219,7 @@ const  Nindex = (index:number)=>{
 }
 
 const  addRoomDialogFormVisible = ref(false)
-const editRoomDialogFormVisible = ref(false)
+const  editRoomDialogFormVisible = ref(false)
 const  roomInfo = ref()
 const editRoom =async (id:number)=>{
   const {data} = await getRoomApi(id)
@@ -274,7 +274,6 @@ const exportExcelAction = () => {
 }
 
 </script>
-
 <style scoped>
 .card-header{
   display: flex;
