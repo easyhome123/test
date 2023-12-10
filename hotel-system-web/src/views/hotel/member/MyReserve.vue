@@ -16,7 +16,7 @@
             </div>
           </template>
 
-          <div class="set" style="width: 900px;">
+          <div class="set" style="width: 1000px;">
             <el-table stripe :data="tableData" element-loading-text="数据加载中" style="width: 100%;text-align: center;"
                       :cell-style="{textAlign:'center'}"
                       :header-cell-style="{fontSize:'15px',background:'skyblue',color:'white',textAlign:'center'}">
@@ -50,7 +50,7 @@
 
               <el-table-column label="订单状态">
                 <template #default="scope">
-                  <el-tag style="cursor: pointer" effect="dark" v-if="scope.row.status===0" @click="payment(scope.row.id,scope.row.hotelRoom.roomNumber)">
+                  <el-tag style="cursor: pointer" effect="dark" v-if="scope.row.status===0">
                     已预定，待支付
                   </el-tag>
                   <el-tag v-else-if="scope.row.status===1" type="success">
@@ -81,6 +81,15 @@
                 </template>
               </el-table-column>
 
+              <el-table-column label="操作" width="200">
+                <template #default="scope">
+                  <template v-if="scope.row.status ===0">
+                    <el-button type="danger" size="small"  @click="unsubscribe(scope.row.id)">退订</el-button>
+                    <el-button type="success" size="small"  @click="payment(scope.row.id,scope.row.hotelRoom.roomNumber)">付款</el-button>
+                  </template>
+                  
+                </template>
+               </el-table-column>
             </el-table>
           </div>
 
@@ -108,8 +117,7 @@ import { markRaw } from 'vue'
 import {getMyReserveListApi, paymentApi} from "@/api/hotel/member/member";
 import {ElMessage, ElMessageBox} from "element-plus";
 import {Iphone} from "@element-plus/icons-vue";
-
-
+import {unsubscribeApi} from "@/api/hotel/reserve/reserve";
 
 
 const tableData = ref([])
@@ -123,7 +131,7 @@ const getMyReserveList = async  ()=>{
   tableData.value = data.result.content
   total.value = data.result.totalElements
 }
-const pageSize = ref(4)
+const pageSize = ref(3)
 const pageIndex = ref(1)
 const Nindex = (index:number)=>{
   const page  = pageIndex.value
@@ -156,6 +164,28 @@ const payment = async (id:number,roomNumber:string) => {
   })
 }
 
+const unsubscribe = async (id:number)=>{
+  ElMessageBox.confirm(
+      '你确定要退订该酒店房间吗？',
+      '温馨提示',
+      {
+        confirmButtonText:'确定',
+        cancelButtonText:'我再想想',
+        type:'warning'
+      }
+  ).then(async ()=>{
+    const {data} = await unsubscribeApi(id)
+    if(data.status === 200){
+      ElMessage({
+        type:'success',
+        message:'退订成功'
+      })
+      await getMyReserveList()
+    }
+  }).catch(()=>{
+    console.log('取消')
+  })
+}
 const changePage = (val:number)=>{
   pageIndex.value = val
   getMyReserveList()
@@ -173,7 +203,7 @@ onMounted(()=>{
 }
 .hotel-container{
   display: flex;
-  width: 1300px;
+  width: 1500px;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;

@@ -83,9 +83,9 @@
         <el-table-column label="房间状态" >
           <template #default="scope">
             <el-tag type="success" v-if="scope.row.roomStatus == 0">空闲</el-tag>
-            <el-tag type="info" v-else-if="scope.row.roomStatus == 1">预订</el-tag>
+            <el-tag type="info" v-else-if="scope.row.roomStatus == 1">已预订</el-tag>
             <el-tag type="warning" v-else-if="scope.row.roomStatus == 2">入住</el-tag>
-            <el-tag type="danger" v-else>维护中</el-tag>
+            <el-tag type="danger" v-else>已退房/未打扫</el-tag>
           </template>
         </el-table-column>
 
@@ -287,7 +287,7 @@ const exportExcelAction = () => {
 }
 :deep(.el-card__header){
   border-bottom: 1px solid rgb(238,238,238);
-  color: #083a6d;
+  color: #4077ae;
 }
 .el-pagination{
   margin-top: 20px;

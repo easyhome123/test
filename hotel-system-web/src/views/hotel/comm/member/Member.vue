@@ -6,7 +6,7 @@
         <router-link to="/hotel/myInfo">我的资料</router-link>
       </dd>
       <dd :class="{ activate:activate == '/hotel/myReserve'}">
-        <router-link to="/hotel/myReserve">我的预定</router-link>
+        <router-link to="/hotel/myReserve">我的预订</router-link>
       </dd>
       <dd :class="{ activate:activate == '/hotel/payment'}">
         <router-link to="/hotel/payment">充值记录</router-link>

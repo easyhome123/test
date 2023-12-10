@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ecd31eed-fa2a-4252-8322-be023836bbda" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vue3.x-system-web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/hotel/comm/footer/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hotel/comm/footer/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/hotel/index/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hotel/index/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/hotel/list/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hotel/list/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/hotel/register/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hotel/register/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/hotel/register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/hotel/register/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/system/home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/home/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/system/layout/header/TopBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/system/layout/header/TopBar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/$PROJECT_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/springboot3.x-system-master.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system/springboot_system.sql" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2Xsv3JIGilocayAi36TmCwNnXR6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java项目/tsets/hotel-system-web&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="ecd31eed-fa2a-4252-8322-be023836bbda" name="更改" comment="" />
+      <created>1699430401280</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699430401280</updated>
+    </task>
+    <servers />
+  </component>
+</project>

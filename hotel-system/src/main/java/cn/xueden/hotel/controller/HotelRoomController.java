@@ -67,6 +67,16 @@ public class HotelRoomController {
             hotelRoomService.deleteById(id);
             return BaseResult.success("删除成功");
         }
+    }
 
+    @EnableSysLog("打扫房间")
+    @PutMapping("/{id}")
+    public BaseResult cleanroom(@PathVariable Long id){
+        if(null == id){
+            return BaseResult.fail("打扫失败");
+        }else {
+            hotelRoomService.cleanroom(id);
+            return BaseResult.success("打扫成功");
+        }
     }
 }

@@ -3,7 +3,10 @@
     <div class="hotel-container">
       <router-link class="logo" to="/index">
         <img src="@/assets/hotel/images/hotel-logo.png" alt="酒店管理系统"/>
+        <p>愿与星河同枕</p>
       </router-link>
+
+    
 
       <div class="hotel-component"></div>
 
@@ -106,6 +109,12 @@ const exitSystem = ()=>{
   width: 80px;
   height: 30px;
   border: none;
+}
+.hotel-container .logo p{
+  display: inline-block;
+  font-size: 15px;
+  padding: 5px;
+  color: #fff;
 }
 
 .hotel-container .hotel-nav{

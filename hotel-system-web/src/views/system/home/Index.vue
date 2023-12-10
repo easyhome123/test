@@ -1,47 +1,46 @@
 <template>
-<div class="main">
-     <el-row :gutter="20" style=" margin: 5px;">
-          <el-col :span="8">
-            <el-card style="height: 100px;text-align: center;">
-               <p>当前日期</p>
-               <div class="countdown-footer">{{ value }}</div>
-            </el-card> 
-         </el-col>
-         <el-col :span="8">
-          <el-card style="height: 100px;text-align: center;">
-            <p>当前时间</p>
-            <div id="time">{{ getDate() }}</div>
-          </el-card>
-       
+  <div class="main">
+    <el-row :gutter="20" style=" margin: 5px;">
+      <el-col :span="8">
+        <el-card style="height: 100px;text-align: center;">
+          <p>当前日期</p>
+          <div class="countdown-footer">{{ value }}</div>
+        </el-card>
+      </el-col>
+      <el-col :span="8">
+        <el-card style="height: 100px;text-align: center;">
+          <p>当前时间</p>
+          <div id="time">{{ getDate() }}</div>
+        </el-card>
 
-         </el-col>
-        <el-col :span="8">
-          <el-card style="height: 100px;text-align: center;">
-               <el-countdown format="DD [days] HH:mm:ss" :value="value2">
-                  <template #title>
-                    <div style="display: inline-flex; align-items: center">
-                      <el-icon style="margin-right: 4px" :size="12">
-                        <Calendar />
-                      </el-icon>
-                      <p>距离下个月的时间</p>
-                    </div>
-                  </template>
-              </el-countdown>
-             
-      </el-card>
-   
-    </el-col>
-    
-  </el-row>
+
+      </el-col>
+      <el-col :span="8">
+        <el-card style="height: 100px;text-align: center;">
+          <el-countdown format="DD [days] HH:mm:ss" :value="value2">
+            <template #title>
+              <div style="display: inline-flex; align-items: center">
+                <el-icon style="margin-right: 4px" :size="12">
+                  <Calendar />
+                </el-icon>
+                <p>距离下个月的时间</p>
+              </div>
+            </template>
+          </el-countdown>
+
+        </el-card>
+
+      </el-col>
+
+    </el-row>
 
     <el-row :gutter="20" style="margin: 5px;">
       <el-col :span="16">
         <el-card>
           <div style="width:100%;height: 400px;" id="main">
-          
           </div>
         </el-card>
-       
+
       </el-col>
 
       <el-col :span="8">
@@ -61,201 +60,165 @@
 
 
     <el-row :gutter="20" style="margin:5px;" class="el-row">
-        <el-col :span="4" class="el-col">
-          <el-card style="background-color:#409EFF;height: 180px;">
-            <div class="grid-content ep-bg-purple" >
-              酒店会员总数
-              <p> {{ total }}</p>
-              </div>
-          </el-card>
-        </el-col>
-         <el-col :span="4" class="el-col">
-          <el-card style="background-color: #F56C6C;height: 180px;">
-            <div class="grid-content ep-bg-purple" >
-              酒店房间总数
-              <p>{{ roomTotal }}</p>
-              </div>
-          </el-card>
-        </el-col>
-         <el-col :span="4" class="el-col">
-          <el-card style="background-color: #E6A23C; height: 180px;">
-            <div class="grid-content ep-bg-purple">
-              酒店预订总数
-              <p>{{ reserveTotal }}</p>
-              </div>
-          </el-card>
-        </el-col>
-         <el-col :span="4" class="el-col">
-          <el-card style="background-color:#67C23A;height: 180px;">
-            <div class="grid-content ep-bg-purple">
-              酒店入住总数
-              <p>{{ checkinTotal }}</p>
-              </div>
-          </el-card>
-        </el-col>
-        
-        <el-col :span="8">
-          <el-card style="height: 180px;">
-              <img src="@/assets/cexia.png" style="width: 100%;height: 100%;">
-          </el-card>
-        </el-col>
+      <el-col :span="4" class="el-col">
+        <el-card style="background-color:#409EFF;height: 180px;">
+          <div class="grid-content ep-bg-purple">
+            酒店会员总数
+            <p> {{ membertotal }}</p>
+          </div>
+        </el-card>
+      </el-col>
+      <el-col :span="4" class="el-col">
+        <el-card style="background-color: #F56C6C;height: 180px;">
+          <div class="grid-content ep-bg-purple">
+            酒店房间总数
+            <p>{{ roomTotal }}</p>
+          </div>
+        </el-card>
+      </el-col>
+      <el-col :span="4" class="el-col">
+        <el-card style="background-color: #E6A23C; height: 180px;">
+          <div class="grid-content ep-bg-purple">
+            酒店预订总数
+            <p>{{ reserveTotal }}</p>
+          </div>
+        </el-card>
+      </el-col>
+      <el-col :span="4" class="el-col">
+        <el-card style="background-color:#67C23A;height: 180px;">
+          <div class="grid-content ep-bg-purple">
+            酒店入住总数
+            <p>{{ checkinTotal }}</p>
+          </div>
+        </el-card>
+      </el-col>
+
+      <el-col :span="8">
+        <el-card style="height: 180px;">
+          <img src="@/assets/cexia.png" style="width: 100%;height: 100%;">
+        </el-card>
+      </el-col>
     </el-row>
 
 
- 
-</div>
 
+  </div>
 </template>
 <script setup lang="ts">
 import { getCheckinListApi } from "@/api/hotel/checkin/checkin"
 import { getRoomListApi } from "@/api/hotel/list/list"
 import { getMemberListApi } from "@/api/hotel/member/member"
 import { getReserveListApi } from "@/api/hotel/reserve/reserve"
-import { onMounted, reactive, ref, watch } from "vue"
+import { onMounted, onUpdated, reactive, ref, watch } from "vue"
 import dayjs from 'dayjs';
 import echarts from "@/utils/echarts"
-import { getIndexApi } from "@/api/hotel/index"
+import { getRoomTypeListApi } from "@/api/hotel/roomtype/roomType"
 
-const total = ref(0)
+let roomlist: any[] = []
+let roomSumlist: any[] = []
+const membertotal = ref(0)
 const roomTotal = ref(0)
 const reserveTotal = ref(0)
 const checkinTotal = ref(0)
-const  params = {
-    'pageIndex': 1,
-    'pageSize': 10,
-    'searchValue':''
+const params = {
+  'pageIndex': 1,
+  'pageSize': 10,
+  'searchValue': ''
+}
+
+
+const loadData = async () => {
+  const [memberData, roomData, reserveData, checkinData] = await Promise.all([
+    getMemberListApi(params),
+    getRoomListApi(params),
+    getReserveListApi(params),
+    getCheckinListApi(params)
+  ]);
+  membertotal.value = memberData.data.totalElements;
+  roomTotal.value = roomData.data.result.totalElements;
+  reserveTotal.value = reserveData.data.totalElements;
+  checkinTotal.value = checkinData.data.totalElements;
+};
+
+const roomTypeEcharts = async () => {
+  const { data } = await getRoomTypeListApi(params)
+  for (const key in data.content) {
+    roomlist[key] = data.content[key].typeName
   }
-const loadData = async ()=>{
-  const { data } = await  getMemberListApi(params)
-  total.value = data.totalElements
-
-}
-const loadRoom = async ()=>{
-  const { data } = await  getRoomListApi(params)
-  roomTotal.value = data.result.totalElements
-}
-const loadReserve = async ()=>{
-  const { data } = await  getReserveListApi(params)
-  reserveTotal.value = data.totalElements
-}
-const loadCheckin = async ()=>{
-  const { data } = await  getCheckinListApi(params)
-  checkinTotal.value = data.totalElements
-}
-
-const value1 = ref("")  
-const getDate = ()=>{
-  let hours = dayjs().hour()
-  let minutes = dayjs().minute() < 10 ? "0"+dayjs().minute() : dayjs().minute()
-  let seconds = dayjs().second() < 10 ? "0"+dayjs().second()  : dayjs().second()
-  value1.value = hours +":"+minutes+":"+ seconds 
-  return value1.value
-}
-onMounted(()=>{
-  loadData()
-  loadRoom()
-  loadReserve()
-  loadCheckin()
-  setInterval(()=>{
-  getDate()
-},1000)
+  for (const i in data.content) {
+    roomSumlist[i] = data.content[i].sum
+  }
   vchart()
-})
-
-
-const vchart = ()=>{
-let chartDom = document.getElementById('main');
-let myChart = echarts.init(chartDom);
-let option = {
-  title: {
-    text: '一周内酒店入住人数'
-  },
-  tooltip: {
-    trigger: 'axis'
-  },
-  legend: {
-    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
-  },
-  grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
-  },
-  toolbox: {
-    feature: {
-      saveAsImage: {}
-    }
-  },
-  xAxis: {
-    type: 'category',
-    boundaryGap: false,
-    data:  ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-  },
-  yAxis: {
-    type: 'value'
-  },
-  series: [
-    {
-      name: 'Email',
-      type: 'line',
-      stack: 'Total',
-      data: [120, 132, 101, 134, 90, 230, 210]
-    },
-    {
-      name: 'Union Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [220, 182, 191, 234, 290, 330, 310]
-    },
-    {
-      name: 'Video Ads',
-      type: 'line',
-      stack: 'Total',
-      data: [150, 232, 201, 154, 190, 330, 410]
-    },
-    {
-      name: 'Direct',
-      type: 'line',
-      stack: 'Total',
-      data: [320, 332, 301, 334, 390, 330, 320]
-    },
-    {
-      name: 'Search Engine',
-      type: 'line',
-      stack: 'Total',
-      data: [820, 932, 901, 934, 1290, 1330, 1320]
-    }
-  ]
 }
-myChart.setOption(option,true)
-}
-
-
-
-
-
+//时间模块
+const value1 = ref("")
 const value = ref(dayjs().format('YYYY-MM-DD'))
 const value2 = ref(dayjs().add(1, 'month').startOf('month'))
+const getDate = () => {
+  let hours = dayjs().hour() < 10 ? "0" + dayjs().hour() : dayjs().hour()
+  let minutes = dayjs().minute() < 10 ? "0" + dayjs().minute() : dayjs().minute()
+  let seconds = dayjs().second() < 10 ? "0" + dayjs().second() : dayjs().second()
+  value1.value = hours + ":" + minutes + ":" + seconds
+  return value1.value
+}
+setInterval(() => {
+  getDate()
+}, 1000)
 
+onMounted(() => {
+  loadData()
+})
+roomTypeEcharts()
+
+
+
+//echarts 画图模块
+const vchart = () => {
+  let chartDom = document.getElementById('main');
+  let myChart = echarts.init(chartDom);
+  let option = {
+    title: {
+      text: '各类客房预订情况'
+    },
+    tooltip: {
+      trigger: 'axis'
+    },
+    xAxis: {
+      data: roomlist
+    },
+    yAxis: {
+
+    },
+    series: [{
+      name: '数量',
+      type: 'bar',
+      data: roomSumlist
+    }]
+
+  }
+  myChart.setOption(option, true)
+}
 </script>
 
 <style scoped>
-.main{
+.main {
   width: 100%;
   background-image: url("@/assets/login/login_bg.svg");
   background-size: cover;
 }
-.text{
-  background-image: linear-gradient(#ffffff,rgb(220, 220, 196),rgb(206, 219, 224));
+
+.text {
+  background-image: linear-gradient(#ffffff, rgb(220, 220, 196), rgb(206, 219, 224));
 }
-.text p{
+
+.text p {
   display: block;
   text-align: center;
   color: #333;
   font-size: 25px;
 }
-.text li{
+
+.text li {
   display: block;
   text-align: center;
   font-size: larger;
@@ -267,9 +230,11 @@ const value2 = ref(dayjs().add(1, 'month').startOf('month'))
 .el-row {
   margin-bottom: 20px;
 }
+
 .el-row:last-child {
   margin-bottom: 0;
 }
+
 .el-col {
   border-radius: 4px;
 }
@@ -282,25 +247,25 @@ const value2 = ref(dayjs().add(1, 'month').startOf('month'))
   text-align: center;
   font-size: 20px;
   color: black
-  
 }
-.grid-content p{
+
+.grid-content p {
   margin: 20px;
   display: block;
-  color: whitesmoke;;
+  color: whitesmoke;
+  ;
   font-size: 40px;
 }
 
 
 .countdown-footer {
   margin-top: 8px;
-  color:aqua ;
+  color: aqua;
   font-size: 25px;
 }
-#time{
+
+#time {
   font-size: 25px;
   color: greenyellow;
   margin-top: 8px;
-}
-
-</style>
+}</style>

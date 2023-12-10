@@ -21,4 +21,6 @@ public interface IHotelRoomService {
 
     //根据楼层id，获取房间列表
     List<HotelRoom> getRoomListByFloorId(Long id, int num);
+
+    void cleanroom(Long id);
 }

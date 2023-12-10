@@ -62,7 +62,7 @@ public class HotelCheckinServiceImpl implements IHotelCheckinService {
         HotelCheckin hotelCheckin = hotelCheckinRepository.findById(id).orElseGet(HotelCheckin::new);
         HotelReserve hotelReserve = hotelReserveRepository.findByOrderNumber(hotelCheckin.getOrderNumber());
         HotelRoom hotelRoom = hotelRoomRepository.findById(hotelCheckin.getRoomId()).orElseGet(HotelRoom::new);
-        hotelRoom.setRoomStatus(0);//房间状态为 0  无人在居住
+        hotelRoom.setRoomStatus(3);//房间状态为 3  变为已退房，但未打扫。
         hotelReserve.setStatus(4);//预订状态为已完成 4
         hotelCheckin.setCheckoutDate(LocalDate.now());
         hotelCheckinRepository.updateStatusById(id);

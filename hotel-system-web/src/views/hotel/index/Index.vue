@@ -4,6 +4,7 @@
 <!--  主体-->
 <div class="hotel-room-nav hotel-index">
   <Search/>
+  <Message/>
 <!--  幻灯片-->
   <div class="hotel-banner">
     <div class="hotel-container">
@@ -18,7 +19,10 @@
         </dl>
       </div>
     </div>
-      <el-carousel height="490px" autoplay type="card" loop >
+      <el-carousel height="500px" autoplay type="card" loop >
+        <el-carousel-item>
+          <img src="@/assets/hotel/images/banner1.jpg" alt="酒店管理">
+        </el-carousel-item>
         <el-carousel-item>
           <img src="@/assets/hotel/images/banner2.jpg" alt="酒店管理">
         </el-carousel-item>
@@ -115,6 +119,7 @@ import Footer from "@/views/hotel/comm/footer/Footer.vue";
 import Search from "@/views/hotel/comm/search/Search.vue";
 import {onMounted, ref} from "vue";
 import {getIndexApi} from "@/api/hotel/index";
+import Message from "@/components/Message.vue";
 
 
 //服务器路径

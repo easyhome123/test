@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="09a44c53-9256-4ca4-b0ff-27f171644eb1" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/.idea/hotel-system-web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/src/assets/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/src/assets/cexia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/src/assets/hotel/images/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/src/assets/login/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/src/assets/login/bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/src/components/Message.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/src/components/ValidCode.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/src/utils/echarts.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/roomstate/RoomState.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadFile/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadFile/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadFile/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadFile/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadFile/4080c183-3d74-4ad6-bc75-0b7a26ec614a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadFile/cjy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadFile/gzp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadFile/zlq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/uploadFile/zp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/uploadFile/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/uploadFile/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/uploadFile/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/uploadFile/4080c183-3d74-4ad6-bc75-0b7a26ec614a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/uploadFile/cjy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/uploadFile/fxg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/uploadFile/gzp.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/uploadFile/zlq.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/uploadFile/zp.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/api/hotel/room/room.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/api/hotel/room/room.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/assets/hotel/images/banner2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/assets/hotel/images/banner2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/assets/hotel/images/banner3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/assets/hotel/images/banner3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/assets/hotel/images/banner4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/assets/hotel/images/banner4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/assets/hotel/images/banner5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/assets/hotel/images/banner5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/checkin/CheckinList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/checkin/CheckinList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/comm/footer/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/comm/footer/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/comm/header/TopHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/comm/header/TopHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/comm/member/Member.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/comm/member/Member.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/details/Details.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/details/Details.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/index/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/index/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/member/MyReserve.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/member/MyReserve.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/register/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/register/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/register/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/register/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/room/RoomList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/hotel/room/RoomList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/system/home/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/system/home/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/system/layout/aside/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/system/layout/aside/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/system/layout/tags/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/system/layout/tags/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/system/layout/tags/components/MoreButton.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/system/layout/tags/components/MoreButton.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/system/log/LogList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/system/log/LogList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/system/role/RoleList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/system/role/RoleList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/src/views/system/user/UserList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/src/views/system/user/UserList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hotel-system-web/viteenv/.env.production" beforeDir="false" afterPath="$PROJECT_DIR$/../hotel-system-web/viteenv/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/controller/HotelRoomController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/controller/HotelRoomController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/domain/HotelRoomType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/domain/HotelRoomType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/service/IHotelRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/service/IHotelRoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/service/impl/HotelCheckinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/service/impl/HotelCheckinServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/service/impl/HotelReserveServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/service/impl/HotelReserveServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/service/impl/HotelRoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/xueden/hotel/service/impl/HotelRoomServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/controller/HotelRoomController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/controller/HotelRoomController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/domain/HotelRoomType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/domain/HotelRoomType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/service/IHotelRoomService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/service/IHotelRoomService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/service/impl/HotelCheckinServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/service/impl/HotelCheckinServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/service/impl/HotelReserveServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/service/impl/HotelReserveServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/service/impl/HotelRoomServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/xueden/hotel/service/impl/HotelRoomServiceImpl.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\JAVA\Maven\apache-maven-3.9.3\repo" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../JAVA/Maven/apache-maven-3.9.3" />
+        <option name="userSettingsFile" value="D:\JAVA\Maven\apache-maven-3.9.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2NiCeG8VzyHLGcDQAFGOSM7MdCs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Java项目/tsets/hotel-system-web&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.67011493&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build.android&quot;
+  }
+}</component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java项目\tsets\hotel-system\src\main\resources\statice" />
+      <recent name="D:\Java项目\tsets\hotel-system\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.HotelManageSystemApplication">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HotelManageSystemApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xueden.HotelManageSystemApplication" />
+      <module name="springboot3.x-system" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.xueden.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XuedenUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.xueden.utils.XuedenUtil" />
+      <module name="springboot3.x-system" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.xueden.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManageSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="springboot3.x-system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.xueden.ManageSystemApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.HotelManageSystemApplication" />
+        <item itemvalue="应用程序.XuedenUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="09a44c53-9256-4ca4-b0ff-27f171644eb1" name="Changes" comment="" />
+      <created>1680137612329</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680137612329</updated>
+      <workItem from="1680137614395" duration="838000" />
+    </task>
+    <task id="LOCAL-00001" summary="Changes">
+      <option name="closed" value="true" />
+      <created>1701242041122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701242041122</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/cn/xueden/system/controller/UserController.java</url>
+          <line>264</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

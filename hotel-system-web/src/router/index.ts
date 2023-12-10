@@ -146,7 +146,7 @@ export const asyncRoutes = [
         meta: {
             title: '数据管理',
             icon: 'DataAnalysis',
-            role: ['ROLE_ADMIN']
+            role: ['ROLE_ADMIN','ROLE_USER']
         },
         redirect: '/base/roomtype',
         component: ()=> import('@/views/system/layout/Index.vue'),
@@ -200,7 +200,7 @@ export const asyncRoutes = [
                 meta:{
                     title:'房态管理',
                     icon: 'House' ,
-                    role: ['ROLE_ADMIN']
+                    role: ['ROLE_ADMIN','ROLE_USER']
                 },
                 component: ()=>import("@/views/hotel/roomstate/RoomState.vue")   
             },

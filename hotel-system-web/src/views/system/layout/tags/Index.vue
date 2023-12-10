@@ -121,7 +121,7 @@ watch(route, () => {
 }
 
 :deep(.el-tabs .el-tabs__header .el-tabs__item.is-active ) {
-  color: #083a6d;
+  color: skyblue;
   border-bottom:2px solid #083a6d;
 }
 </style>

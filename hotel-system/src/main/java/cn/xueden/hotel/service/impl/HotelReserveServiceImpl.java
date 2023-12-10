@@ -1,14 +1,8 @@
 package cn.xueden.hotel.service.impl;
 
 import cn.xueden.exception.BadRequestException;
-import cn.xueden.hotel.domain.HotelCheckin;
-import cn.xueden.hotel.domain.HotelMember;
-import cn.xueden.hotel.domain.HotelReserve;
-import cn.xueden.hotel.domain.HotelRoom;
-import cn.xueden.hotel.repository.HotelCheckinRepository;
-import cn.xueden.hotel.repository.HotelMemberRepository;
-import cn.xueden.hotel.repository.HotelReserveRepository;
-import cn.xueden.hotel.repository.HotelRoomRepository;
+import cn.xueden.hotel.domain.*;
+import cn.xueden.hotel.repository.*;
 import cn.xueden.hotel.service.IHotelReserveService;
 import cn.xueden.hotel.service.dto.ReserveQueryCriteria;
 import cn.xueden.utils.PageUtil;
@@ -34,11 +28,14 @@ public class HotelReserveServiceImpl implements IHotelReserveService {
 
     private final HotelCheckinRepository hotelCheckinRepository;
 
-    public HotelReserveServiceImpl(HotelReserveRepository hotelReserveRepository, HotelRoomRepository hotelRoomRepository, HotelMemberRepository hotelMemberRepository, HotelCheckinRepository hotelCheckinRepository) {
+    private final HotelRoomTypeRepository hotelRoomTypeRepository;
+
+    public HotelReserveServiceImpl(HotelReserveRepository hotelReserveRepository, HotelRoomRepository hotelRoomRepository, HotelMemberRepository hotelMemberRepository, HotelCheckinRepository hotelCheckinRepository, HotelRoomTypeRepository hotelRoomTypeRepository) {
         this.hotelReserveRepository = hotelReserveRepository;
         this.hotelRoomRepository = hotelRoomRepository;
         this.hotelMemberRepository = hotelMemberRepository;
         this.hotelCheckinRepository = hotelCheckinRepository;
+        this.hotelRoomTypeRepository = hotelRoomTypeRepository;
     }
 
     @Override
@@ -146,6 +143,7 @@ public class HotelReserveServiceImpl implements IHotelReserveService {
         return localDateSet;
     }
 
+    //预订房间
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void addReserve(HotelReserve hotelReserve) {
@@ -158,8 +156,11 @@ public class HotelReserveServiceImpl implements IHotelReserveService {
             //预定天数
             hotelReserve.setReserveDays(reserveDays);
             HotelRoom hotelRoom = hotelRoomRepository.getReferenceById(hotelReserve.getRoomId());
+            HotelRoomType hotelRoomType = hotelRoomTypeRepository.getById(hotelRoom.getRoomTypeId());
+            hotelRoomType.setSum(hotelRoomType.getSum()+1);
             hotelRoom.setRoomStatus(1);//房间状态变为1，为已预定。
             hotelRoomRepository.save(hotelRoom);
+            hotelRoomTypeRepository.save(hotelRoomType);
             int money = 0;
             money = reserveDays.intValue()*hotelRoom.getMemberPrice();
             hotelReserve.setAmountMoney(money);

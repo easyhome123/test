@@ -43,10 +43,14 @@
                     <span>{{roomInfo.memberPrice}}</span>
                   </strong>
                 </p>
+                <p class="reference" v-if="roomInfo.roomStatus == 0"><span>房间状态</span>空闲</p>
+                <p class="reference" v-else-if="roomInfo.roomStatus == 1"><span>房间状态</span>已被预订</p>
+                <p class="reference" v-else-if="roomInfo.roomStatus == 2"><span>房间状态</span>已有人入住</p>
+                <p class="reference" v-else><span>房间状态</span>退房但未打扫</p>
               </div>
             </div>
 
-            <p class="store-detail-active">
+            <p class="store-detail-active" v-if="roomInfo.roomStatus == 0">
               <el-button @click="reserveRoom(roomInfo.id,roomInfo.roomNumber)" color="skyblue"
                          style="width: 200px; line-height: 50px;font-size: 20px;height: 50px;color:white;">
                 <el-icon size="30" class="hotel-icon"><Stopwatch/></el-icon>

@@ -84,7 +84,7 @@ menuData.value=routers
 /*选中的颜色*/
 :deep(.el-menu-item.is-active){
   color: white;
-  background: linear-gradient(to right, #083a6d, #5e6eba);
+  background: linear-gradient(to right, skyblue, #5e6eba);
 }
 
 </style>

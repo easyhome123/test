@@ -21,7 +21,7 @@ a:hover {
   color: #2fa7b9;
 }
 #nprogress .bar {
-  background: #083a6d !important;
+  background: skyblue !important;
 }
 
 .card-header{
@@ -36,7 +36,7 @@ a:hover {
 }
 :deep(.el-card__header){
   border-bottom: 1px solid rgb(238,238,238);
-  color: #083a6d;
+  color: skyblue;
 }
 .my-button{
   display: flex;

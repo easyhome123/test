@@ -108,4 +108,12 @@ public class HotelRoomServiceImpl implements IHotelRoomService {
     public List<HotelRoom> getRoomListByFloorId(Long id, int num) {
         return hotelRoomRepository.getRoomListByFloorId(id,num);
     }
+
+    @Override
+    @Transactional(rollbackFor = Exception.class)
+    public void cleanroom(Long id) {
+        HotelRoom hotelRoom1 = hotelRoomRepository.findById(id).orElseGet(HotelRoom::new);
+        hotelRoom1.setRoomStatus(0);//房间状态为0，完成打扫。变为空闲状态。
+        hotelRoomRepository.save(hotelRoom1);
+    }
 }

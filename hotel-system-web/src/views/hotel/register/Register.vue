@@ -2,8 +2,6 @@
   <TopHeader/>
 
 
-  <!-- <Search/> -->
-
   <div class="hotel-container hotel-data">
     <el-card class="hotel-data-intro">
       <div class="register-content">

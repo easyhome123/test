@@ -39,7 +39,7 @@
     <el-table element-loading-text="数据加载中..." v-loading="loading" :data="tableData"
     style="width: 100%;text-align: center;" :cell-style="{ textAlign: 'center'}"
     :row-class-name="rowClassName"
-    :header-cell-style="{ fontSize: '15px',background: '#083a6d',color: 'white',textAlign: 'center' }">
+    :header-cell-style="{ fontSize: '15px',background: 'skyblue',color: 'white',textAlign: 'center' }">
       <el-table-column label="序号" width="100" type="index" :index="Nindex"/>
 
       <el-table-column label="角色名称" >

@@ -24,5 +24,17 @@ export default defineConfig({
        alias: {
            '@': path.resolve('./src') // @代替src
        }
-   }
+   },
+   server: {
+    proxy: {
+      '/baiduapi':  {
+        target: 'https://aip.baidubce.com/',
+        changeOrigin: true,//允许跨域
+        ws: true, // 是否启用websockets
+        secure: true,//默认为true，是否需要携带安全证书，即https时，是需要的，设置成false就不用了
+        rewrite: (path) => path.replace(/^\/baiduapi/,'')
+      }
+    }
+  }
+  
 })

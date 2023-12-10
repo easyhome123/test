@@ -2,9 +2,9 @@
   <div class="hotel-footer">
     <div class="text-right">
     <dl>
-      <dt>预订</dt>
-      <dd><a>修改/取消订单</a></dd>
-      <dd><a>检索酒店订单</a></dd>
+      <dt>预订服务</dt>
+      <dd><router-link to="/hotel/myReserve">取消预订</router-link></dd>
+      <dd><router-link to="/hotel/myReserve">检索预订</router-link></dd>
     </dl>
     <dl>
       <dt>客户服务</dt>
@@ -18,7 +18,7 @@
     </dl>
    </div>
    <div class="text-left">
-    <img src="@/assets/1.jpg" width="200px" height="200px" >
+    <img src="@/assets/1.jpg">
     <p class="min">独家认证</p>
    </div>
   <div class="footer">
@@ -31,27 +31,26 @@
 </script>
 <style scoped>
 .hotel-footer{
+  display: flex;
   margin: 50px 0 0 ;
   padding: 20px 0 30px;
-  line-height: 80px;
-  text-align: center;
   color: #737573;
   border: 1px solid #e2e2e2;
   background-color: #333;
-  height: 400px;
-  position: relative;
+  height: 350px;
 }
 .hotel-footer .text-right{
   color: #FFF;
   width: 65%;
   height: 300px;
-  position: absolute;
+  line-height: 50px;
+  display: flex;
 }
 .hotel-footer .text-right dl{
-
   display: block;
-  float: left;
-  margin: 30px 130px;
+  width: 30%;
+  margin: 50px 20px;
+  text-align: center;
   padding: 2px;
 }
 .hotel-footer .text-right dl dt{
@@ -61,24 +60,29 @@
   color: rgba(241, 237, 237, 0.541);
 }
 .hotel-footer .text-left{
-  border-left: 1px solid white;
+  border-left: 2px dashed white;
   width: 30%;
   height: 300px;
-  margin-top: 20px;
-  float: right;
+  margin: 40px;
+  text-align: center;
+}
+.hotel-footer .text-left img{
+  width:200px;
+  height:200px;
 }
 .hotel-footer .text-left .min{
-  margin-top: -20px;
-  text-align: center;
+  font-family: "宋体";
+  padding: 20px;
   color: darkturquoise;
   font-size: larger;
 }
 .hotel-footer .footer{
   width: 100%;
-  height: 80px;
+  height: 40px;
   position: absolute;
   margin-top: 350px;
   background-color: black;
-  float: left;
+  text-align: center;
+  padding-top: 20px;
 }
 </style>

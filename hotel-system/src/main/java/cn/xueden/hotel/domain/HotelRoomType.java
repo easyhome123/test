@@ -24,4 +24,6 @@ public class HotelRoomType extends BaseEntity {
     @Column(name = "type_sort",nullable = false)
     private Integer typeSort;
 
+    @Column(name = "sum",nullable = false)
+    private Integer sum;
 }
