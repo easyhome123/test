@@ -3,3 +3,5 @@
 
 # 技术栈
 ### Spring Boot、Spring Data JPA、Vue、Pinia、MySQL、Axios、阿里云ECS服务器
+
+### 该项目采用前后端分离架构。后端利用Spring Data JPA框架简化持久层操作，并与关系型数据库进行交互。前端结合AI机器人模型和百度的TTS文本语音技术实现智能语音助手，并使用Echarts进行数据可视化分析。项目最终部署在阿里云上。
